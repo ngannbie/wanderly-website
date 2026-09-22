@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wanderly - Khám phá những điểm đến tuyệt đẹp tại Việt Nam">
+  <title>Wanderly | Khám phá Việt Nam</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header sticky-top">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container">
+      <a href="#home" class="logo navbar-brand">Wander<span>ly.</span></a>
+
+      <button class="navbar-toggler menu-toggle" type="button"
+              data-bs-toggle="collapse" data-bs-target="#mainNav"
+              aria-controls="mainNav" aria-expanded="false" aria-label="Mở menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse main-nav" id="mainNav">
+        <ul class="navbar-nav mx-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Trang chủ</a>
+          </li>
+
+          <li class="nav-item dropdown submenu-parent">
+            <a class="nav-link dropdown-toggle" href="#destinations" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Điểm đến
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#destinations">Tất cả điểm đến</a></li>
+              <li class="submenu-parent submenu">
+                <a class="dropdown-item submenu-toggle" href="#destinations">
+                  Theo khu vực <span>›</span>
+                </a>
+                <ul class="dropdown-menu submenu-menu">
+                  <li><a class="dropdown-item" href="#destinations">Miền Bắc</a></li>
+                  <li><a class="dropdown-item" href="#destinations">Miền Trung</a></li>
+                  <li><a class="dropdown-item" href="#destinations">Miền Nam</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <li class="nav-item dropdown submenu-parent">
+            <a class="nav-link dropdown-toggle" href="#experiences" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Trải nghiệm
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#experiences">Tất cả trải nghiệm</a></li>
+              <li><a class="dropdown-item" href="#experiences">Ẩm thực địa phương</a></li>
+              <li><a class="dropdown-item" href="#experiences">Chạm vào thiên nhiên</a></li>
+              <li><a class="dropdown-item" href="#experiences">Văn hóa bản địa</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item"><a class="nav-link" href="#gallery">Thư viện</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Liên hệ</a></li>
+        </ul>
+
+        <a class="nav-button d-none d-lg-inline-flex" href="#contact">Khám phá ngay</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <!-- Bootstrap 12-column grid -->
+  <section id="home" class="hero section">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-12 col-lg-7 hero-content">
+          <p class="eyebrow">✦ HÀNH TRÌNH CỦA BẠN BẮT ĐẦU TỪ ĐÂY</p>
+          <h1>Đi để thấy<br><span>Việt Nam</span> đẹp đến nhường nào.</h1>
+          <p class="hero-text">
+            Cùng Wanderly khám phá những vùng đất đầy cảm hứng,
+            những món ăn đặc sắc và những trải nghiệm không thể quên.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#destinations" class="btn btn-primary-custom">Khám phá điểm đến →</a>
+            <a href="#experiences" class="btn btn-light-custom">Xem trải nghiệm</a>
+          </div>
+
+          <div class="hero-stats">
+            <div><strong>63+</strong><span>Tỉnh thành</span></div>
+            <div><strong>120+</strong><span>Điểm đến</span></div>
+            <div><strong>4.9/5</strong><span>Đánh giá</span></div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-5">
+          <div class="hero-image">
+            <img src="https://images.unsplash.com/photo-1528127269322-539801943592?auto=format&fit=crop&w=1000&q=85" alt="Phong cảnh Việt Nam">
+            <div class="floating-card">
+              <span class="pin">⌖</span>
+              <div><strong>Hạ Long, Việt Nam</strong><small>Di sản thiên nhiên thế giới</small></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="destinations" class="section destinations">
+    <div class="container">
+      <div class="section-heading row align-items-end g-4">
+        <div class="col-12 col-lg-7">
+          <p class="eyebrow">ĐIỂM ĐẾN NỔI BẬT</p>
+          <h2>Nơi nào đang chờ bạn?</h2>
+        </div>
+        <div class="col-12 col-lg-5">
+          <p>Những địa điểm được yêu thích bởi vẻ đẹp tự nhiên, văn hóa và những câu chuyện rất riêng.</p>
+        </div>
+      </div>
+
+      <div class="row g-3">
+        <article class="destination-card large col-12 col-lg-7">
+          <img src="https://images.unsplash.com/photo-1504457047772-27faf1c00561?auto=format&fit=crop&w=1200&q=85" alt="Vịnh Hạ Long">
+          <div class="card-overlay"><span>MIỀN BẮC</span><h3>Vịnh Hạ Long</h3><p>Hành trình giữa những kỳ quan đá vôi.</p></div>
+        </article>
+
+        <article class="destination-card col-12 col-lg-5">
+          <img src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=900&q=85" alt="Hội An">
+          <div class="card-overlay"><span>MIỀN TRUNG</span><h3>Hội An</h3><p>Phố cổ bình yên bên dòng Thu Bồn.</p></div>
+        </article>
+
+        <article class="destination-card col-12 col-lg-5">
+          <img src="https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?auto=format&fit=crop&w=900&q=85" alt="Sapa">
+          <div class="card-overlay"><span>MIỀN BẮC</span><h3>Sa Pa</h3><p>Chạm mây giữa núi rừng Tây Bắc.</p></div>
+        </article>
+
+        <article class="destination-card col-12 col-lg-7">
+          <img src="https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?auto=format&fit=crop&w=1200&q=85" alt="Đà Lạt">
+          <div class="card-overlay"><span>MIỀN NAM</span><h3>Đà Lạt</h3><p>Thành phố của sương, hoa và những ngày dịu dàng.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="experiences" class="section experiences">
+    <div class="container">
+      <div class="section-heading centered">
+        <p class="eyebrow">TRẢI NGHIỆM</p>
+        <h2>Du lịch không chỉ là điểm đến</h2>
+        <p>Hãy để mỗi chuyến đi trở thành một câu chuyện đáng nhớ.</p>
+      </div>
+
+      <div class="row g-4 experience-grid">
+        <article class="col-12 col-md-6 col-lg-4">
+          <div class="experience-card h-100">
+            <div class="icon">🍜</div><h3>Ẩm thực địa phương</h3>
+            <p>Thưởng thức những hương vị đặc trưng và khám phá câu chuyện phía sau mỗi món ăn.</p>
+            <a href="#contact">Tìm hiểu thêm →</a>
+          </div>
+        </article>
+
+        <article class="col-12 col-md-6 col-lg-4">
+          <div class="experience-card featured h-100">
+            <div class="icon">🏔️</div><h3>Chạm vào thiên nhiên</h3>
+            <p>Trekking, săn mây, ngắm biển và hòa mình vào những khung cảnh tuyệt đẹp.</p>
+            <a href="#contact">Tìm hiểu thêm →</a>
+          </div>
+        </article>
+
+        <article class="col-12 col-md-6 col-lg-4">
+          <div class="experience-card h-100">
+            <div class="icon">🏮</div><h3>Văn hóa bản địa</h3>
+            <p>Gặp gỡ người dân, tìm hiểu phong tục và cảm nhận nhịp sống của từng vùng đất.</p>
+            <a href="#contact">Tìm hiểu thêm →</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section gallery">
+    <div class="container">
+      <div class="section-heading row align-items-end g-4">
+        <div class="col-12 col-lg-7"><p class="eyebrow">TRAVEL DIARY</p><h2>Một Việt Nam, triệu khoảnh khắc</h2></div>
+        <div class="col-12 col-lg-5"><p>Những khung hình nhỏ lưu giữ cảm xúc lớn.</p></div>
+      </div>
+
+      <div class="gallery-grid">
+        <img class="g1" src="https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?auto=format&fit=crop&w=1000&q=85" alt="Hội An">
+        <img class="g2" src="https://images.unsplash.com/photo-1509030450996-dd1a26dda07a?auto=format&fit=crop&w=1000&q=85" alt="Sa Pa">
+        <img class="g3" src="https://images.unsplash.com/photo-1504457047772-27faf1c00561?auto=format&fit=crop&w=1000&q=85" alt="Vịnh Hạ Long">
+        <img class="g4" src="https://images.unsplash.com/photo-1523731407965-2430cd12f5e4?auto=format&fit=crop&w=1000&q=85" alt="Đà Lạt">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-12 col-lg-5 contact-content">
+          <p class="eyebrow">LET'S TRAVEL</p>
+          <h2>Sẵn sàng cho chuyến đi tiếp theo?</h2>
+          <p>Để lại email, Wanderly sẽ gửi cho bạn những gợi ý điểm đến và hành trình thú vị.</p>
+          <div class="contact-info">
+            <p>📍 Thành phố Hồ Chí Minh, Việt Nam</p>
+            <p>✉️ hello@wanderly.vn</p>
+            <p>☎️ 0909 123 456</p>
+          </div>
+        </div>
+
+        <form class="col-12 col-lg-7 contact-form" id="contactForm">
+          <div class="row g-3">
+            <div class="col-12 col-md-6">
+              <label>Họ và tên<input type="text" name="name" placeholder="Nguyễn Văn A" required></label>
+            </div>
+            <div class="col-12 col-md-6">
+              <label>Email<input type="email" name="email" placeholder="email@example.com" required></label>
+            </div>
+            <div class="col-12">
+              <label>Bạn muốn khám phá đâu?
+                <select name="destination">
+                  <option>Hạ Long</option><option>Hội An</option><option>Sa Pa</option><option>Đà Lạt</option><option>Khác</option>
+                </select>
+              </label>
+            </div>
+            <div class="col-12">
+              <label>Lời nhắn<textarea name="message" rows="4" placeholder="Hãy chia sẻ mong muốn của bạn..."></textarea></label>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-primary-custom" type="submit">Gửi yêu cầu →</button>
+              <p class="form-message" id="formMessage"></p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="row align-items-center gy-3 text-center text-lg-start">
+      <div class="col-12 col-lg-4"><a href="#home" class="logo">Wander<span>ly.</span></a></div>
+      <div class="col-12 col-lg-4"><p>© 2026 Wanderly. Khám phá Việt Nam theo cách của bạn.</p></div>
+      <div class="col-12 col-lg-4">
+        <div class="socials justify-content-center justify-content-lg-end">
+          <a href="#">Facebook</a><a href="#">Instagram</a><a href="#">TikTok</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
